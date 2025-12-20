@@ -19,6 +19,7 @@ pipeline {
                npm run build
                
                ls -ltra
+               npm test
                '''
             }
         }
