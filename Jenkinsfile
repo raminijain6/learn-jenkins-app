@@ -26,7 +26,8 @@ pipeline {
         stage("Test"){
             steps{
                 sh '''
-                ls -ltra ./build
+                echo 'Test Stage'
+                ls -ltra ./build index.html
                 npm test
                 '''
 
